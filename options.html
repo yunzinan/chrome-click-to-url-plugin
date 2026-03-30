@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click To URL Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <div class="brand">
+          <img src="icons/icon128.png" alt="Click To URL logo" class="logo" />
+          <div>
+            <p class="eyebrow">Click To URL</p>
+            <h1>设置跳转地址</h1>
+          </div>
+        </div>
+
+        <p class="intro">
+          点击扩展图标时，浏览器会按照这里保存的设置打开目标网址。
+        </p>
+
+        <form id="settings-form" class="form">
+          <label for="target-url" class="label">目标 URL</label>
+          <input
+            id="target-url"
+            name="target-url"
+            class="input"
+            type="url"
+            placeholder="https://example.com/"
+            required
+          />
+
+          <fieldset class="mode-group">
+            <legend class="label">打开方式</legend>
+
+            <label class="mode-option">
+              <input
+                type="radio"
+                name="open-mode"
+                value="new-tab"
+                checked
+              />
+              <span>新标签页打开</span>
+            </label>
+
+            <label class="mode-option">
+              <input
+                type="radio"
+                name="open-mode"
+                value="current-tab"
+              />
+              <span>当前页打开</span>
+            </label>
+          </fieldset>
+
+          <div class="actions">
+            <button type="submit" class="button">保存</button>
+            <button type="button" id="reset-button" class="button button-secondary">
+              恢复默认
+            </button>
+          </div>
+
+          <p id="status" class="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>

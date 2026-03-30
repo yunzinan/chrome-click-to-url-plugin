@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Click To URL",
+  "version": "1.0.1",
+  "description": "Click the extension icon to jump the current tab to a preset URL.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16-transparent.png",
+    "32": "icons/icon32-transparent.png",
+    "48": "icons/icon48-transparent.png",
+    "128": "icons/icon128-transparent.png"
+  },
+  "action": {
+    "default_title": "Open preset URL",
+    "default_icon": {
+      "16": "icons/icon16-transparent.png",
+      "32": "icons/icon32-transparent.png",
+      "48": "icons/icon48-transparent.png",
+      "128": "icons/icon128-transparent.png"
+    }
+  }
+}
