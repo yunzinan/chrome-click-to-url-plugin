@@ -1,43 +1,51 @@
 # Chrome Click To URL Plugin
 
-这是一个最小可用的 Chrome 扩展。
+A minimal Chrome extension that opens a preset URL when you click its toolbar icon.
 
-功能：
+Features:
 
-- 点击扩展图标
-- 按你的设置在“新标签页”或“当前页”打开目标 URL
-- 可在扩展设置页直接修改目标 URL 和打开方式，无需改代码
+- Click the extension icon to open a target URL
+- Opens in a **new tab** or the **current tab**, based on your settings
+- Change the target URL and open mode directly from the extension's options page — no code changes needed
 
-## 修改目标网址
+## Changing the Target URL
 
-方式一：
+**Method 1:**
 
-- 打开 `chrome://extensions/`
-- 找到这个扩展
-- 点击“详情”
-- 点击“扩展程序选项”
-- 在页面里输入新的 URL，选择打开方式，并保存
+- Open `chrome://extensions/`
+- Find this extension
+- Click **Details**
+- Click **Extension options**
+- Enter a new URL, choose how to open it, and save
 
-方式二：
+**Method 2:**
 
-- 在浏览器工具栏里右键这个扩展图标
-- 点击“选项”
-- 进入设置页修改 URL
+- Right-click the extension icon in the browser toolbar
+- Click **Options**
+- Update the URL in the settings page
 
-## 安装方法
+## Installation
 
-1. 打开 Chrome 或其他 Chromium 内核浏览器
-2. 进入 `chrome://extensions/`
-3. 打开右上角“开发者模式”
-4. 点击“加载已解压的扩展程序”
-5. 选择当前目录：`chrome-click-to-url-plugin`
+### Option A: Load unpacked (developer mode)
 
-安装后点击扩展图标，会按照你的设置打开目标网址。
+1. Open Chrome or any Chromium-based browser
+2. Go to `chrome://extensions/`
+3. Enable **Developer mode** (toggle in the top-right corner)
+4. Click **Load unpacked**
+5. Select the `chrome-click-to-url-plugin` directory
 
-默认地址是：
+### Option B: Install from the release package
+
+1. Download `chrome-click-to-url-plugin.zip` from the [Releases](https://github.com/yunzinan/chrome-click-to-url-plugin/releases) page
+2. Unzip the file to a local folder
+3. Follow steps 1–5 from **Option A** above, selecting the unzipped folder
+
+After installation, clicking the extension icon will open the target URL according to your settings.
+
+The default URL is:
 
 ```text
 https://inftab.com/
 ```
 
-如果你清空了 URL，点击扩展图标时会自动打开设置页。
+If the URL is cleared, clicking the extension icon will automatically open the options page.
